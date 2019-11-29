@@ -1,0 +1,4 @@
+Test-Command: hexedit -h 2>&1 | grep '^usage'
+
+Test-Command: xvfb-run -a hexedit debian/tests/control &
+Depends: @, xauth, xvfb
